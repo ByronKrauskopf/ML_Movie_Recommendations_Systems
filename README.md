@@ -82,7 +82,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-### Collaborate with a team on a final project that synthesizes and showcases the skills we've learned in this course.
+### Collaborate with a team on a final project that synthesizes and showcases the skills we've learned in this course
 
 ### This project will take place in four segments. At the end of each segment, we'll submit a graded deliverable. 
 
