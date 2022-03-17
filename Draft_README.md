@@ -23,10 +23,7 @@
 - we can frame our steps from start to finish with checkboxes here
 
 # Communications Protocol
-- all communications on Slack
-- team members should check Slack at least once per day for any cruitical communications
-- meet Tues and Thurs (class hours), Sat (hours tbd)
-- other meetings scheduled on an as needed basis 
+For this project all communications will be done via Slack for messaging, and Zoom for meetings. Team members should check Slack at least once per day for any critical messages. Team meetings will occur 3 times a week on Tuesdays and Thursdays during class hours, and Saturday afternoons. Additional meetings can be scheduled through Slack as needed. 
 
 # Contributing
 Douglas Oliveira
