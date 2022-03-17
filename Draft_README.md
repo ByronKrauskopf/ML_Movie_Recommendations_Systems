@@ -23,7 +23,15 @@
 - we can frame our steps from start to finish with checkboxes here
 
 # Communications Protocol
-For this project all communications will be done via Slack for messaging, and Zoom for meetings. Team members should check Slack at least once per day for any critical messages. Team meetings will occur 3 times a week on Tuesdays and Thursdays during class hours, and Saturday afternoons. Additional meetings can be scheduled through Slack as needed. 
+
+General communication:
+For this project all communications will be done via Slack for messaging, and Zoom for meetings. Team members should check Slack at least once per day for any critical messages. 
+
+Meetings:
+Team meetings will occur 3 times a week on Tuesdays and Thursdays during class hours, and Saturday afternoons. Additional meetings can be scheduled through Slack as needed. 
+
+Pull Requests:
+When submitting a pull request in GitHub, the user should also post a notice in Slack so that all other team members are aware of the outstanding request in GitHub and can review and approve. 
 
 # Contributing
 Douglas Oliveira
