@@ -34,8 +34,8 @@ Pull Requests:
 When submitting a pull request in GitHub, the user should also post a notice in Slack so that all other team members are aware of the outstanding request in GitHub and can review and approve. 
 
 # Contributing
-Douglas Oliveira
-Omar Zu'bi
-Jathuson Jayakumar
-Danni Yang
-Byron Krauskopf 
+- Douglas Oliveira
+- Omar Zu'bi
+- Jathuson Jayakumar
+- Danni Yang
+- Byron Krauskopf 
