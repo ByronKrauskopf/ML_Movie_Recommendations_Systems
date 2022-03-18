@@ -1,8 +1,10 @@
 # Group 3 Final Project
 
 # About the Project
+Problem Statement
 - Selected topic
 - Reason for topic
+
 - Description of data source
 - Question to be answered
 
