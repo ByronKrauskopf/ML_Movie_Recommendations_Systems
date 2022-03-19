@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/resources/logo.png">
+  <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/Resources/logo.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
