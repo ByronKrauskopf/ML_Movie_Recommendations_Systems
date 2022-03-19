@@ -53,17 +53,31 @@ Using a database connected with AWS is a convienent way to store diffrent datase
 
 Additional instructions to set up a PostgreSQL database instance with Amazon Web Services (AWS) can be found in this [link](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.PostgreSQL.html).
 
+*Initial AWS DB setup instructions:*
 1. Create and sign into your AWS Management console and open the Amazon RDS Console at https://console.aws.amazon.com/rds/.
 2. In the upper-right corner of the AWS Managment Console, Choose the AWS Region where you will create the DB Instance. (CHANGE STEP)
-3. In the Navigation pane, choose **Databases.**
+3. In the Navigation pane, choose **Databases**.
 5. Choose **Create Databases.** and select the **Easy create** option.
-6. On the **Create database** page, shown following, make sure that the **Standard create** option is chosen, and then choose **PostgreSQL**
+6. On the **Create database** page, shown following, make sure that the **Standard create** option is chosen, and then choose **PostgreSQL**.
 7. Under **Version**, click on the dropdown menue and select PostgreSQL 12.8-R1. This allows us to select the free tier for DB template.
-9. For **Templates**, select **Free tier**
-10. 
+9. For **Templates**, select **Free tier**.
+10. Enter a name for the **DB instance identifier**.
+11. For **Master username**, enter a name for the master user or leave it to the default name,
+12. For **Master password**, enter a password or use an auto generated password by clicking the checkbox, **Auto generate a password**
+13. Under the **Connectivity** section, click the **Additional connectivity configuration** drop down to display more options. Under **Publicly accessible** options, select **Yes**.
+14. Scroll to the bottom and seelct **Create database** button. On the main AWS RDS dashboard, you should see your newly created database. It will take some time to be initialized and created. 
 
-
-
+*Connecting the DB with pgAdmin:*
+1. Navigate to the **Services** drop down tab and select **RDS**.
+2. Under the **Resources** section, select **DB Instances** link.
+3. Click the DB instance.
+4. Copy the **Endpoint** under the **Connectivity & Security** section. This endpoint will be used to connect your pgAdmin to the AWS server. 
+5. Navigate to pgAdmin and login.
+6. Select **Add New Server** link. On the generated popup, enter a **Name** for the server name.
+7. Cick on the **Connection** tab and in the **Host name/address** box, paste in the copied endpoint.  
+8. **Port** number should be defaulted at 5432, postgres should be the defaulted **Maintenance database** unless you choose a diffrent username during the creation of the AWS DB.  
+9. Fill out the **Password** that you used to create the AWS databse. 
+10. Click the blue **Save** button. You should have now sucessfully connected your AWS server to your pgAdmin. 
 
 <!--################Usage################-->
 # Usage
