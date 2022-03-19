@@ -139,6 +139,14 @@ When submitting a pull request in GitHub, the user should also post a notice in 
 <!--################Contributors################-->
 
 # Contributing
+
+
+<a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ByronKrauskopf/Group_3_Final_Project" />
+</a>
+</a>
+
+
 - Douglas Oliveira
 - Omar Zu'bi
 - Jathuson Jayakumar
