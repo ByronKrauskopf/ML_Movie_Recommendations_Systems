@@ -1,21 +1,50 @@
 # Group 3 Final Project
 
+
+<!--################TABLE OF CONTENTS################-->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+<!--################About################-->
 # About the Project
 Movie Recommendation system from MovieLens dataset
 
 With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately ### movie ratings of ### movies made by ### Movielens users. The main question we want to answer with the dataset is: can we accurately predict movie suggestions for users based off their previous ratings? 
 
 
-### Prerequisits and Tools:
+### Built With:
 - AWS
 - Postgres SQL + PgAdmin
 - techology to be used
 - ML Model and why
 - Database type selected and why
 
+<!--#############Getting Started################-->
 # Getting Started
 
-### Prerequisites ands Installation
+### Prerequisites
 - installation packages and software versions
 - 
 
@@ -36,13 +65,16 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 
 
 
-
+<!--################Usage################-->
 # Usage
 - describe use case of our project
-
+- 
+<!--################Roadmap################-->
 # Roadmap
 - we can frame our steps from start to finish with checkboxes here
 
+
+<!--################Communication Protocol################-->
 # Communications Protocol
 
 General communication:
@@ -54,6 +86,7 @@ Team meetings will occur 3 times a week on Tuesdays and Thursdays during class h
 Pull Requests:
 When submitting a pull request in GitHub, the user should also post a notice in Slack so that all other team members are aware of the outstanding request in GitHub and can review and approve. 
 
+<!--################Contributors################-->
 # Contributing
 - Douglas Oliveira
 - Omar Zu'bi
