@@ -1,57 +1,29 @@
+# Group 3 Final Project
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/Resources/logo.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Movie Recommendation ML Model
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="#">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/issues">Request Feature</a>
   </p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS -->
+<!--################TABLE OF CONTENTS################-->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -77,181 +49,98 @@
   </ol>
 </details>
 
+<!--################About################-->
+# About the Project
+Movie Recommendation system from MovieLens dataset
+
+With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately ### movie ratings of ### movies made by ### Movielens users. The main question we want to answer with the dataset is: can we accurately predict movie suggestions for users based off their previous ratings? 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-### Collaborate with a team on a final project that synthesizes and showcases the skills we've learned in this course
-
-### This project will take place in four segments. At the end of each segment, we'll submit a graded deliverable.
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
+### Built With:
+- AWS
+- Postgres SQL + PgAdmin
+- techology to be used
+- ML Model and why
+- Database type selected and why
+- 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+<!--#############Getting Started################-->
+# Getting Started
 
 ### Prerequisites
+- installation packages and software versions
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+### Relational Database Setup
+Using a database connected with AWS is a convienent way to store diffrent datasets that have relationships with each other.
 
-### Installation
+Additional instructions to set up a PostgreSQL database instance with Amazon Web Services (AWS) can be found in this [link](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.PostgreSQL.html).
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+*Initial AWS DB setup instructions:*
+1. Create and sign into your AWS Management console and open the Amazon RDS Console at https://console.aws.amazon.com/rds/.
+2. In the upper-right corner of the AWS Managment Console, Choose the AWS Region where you will create the DB Instance. (CHANGE STEP)
+3. In the Navigation pane, choose **Databases**.
+5. Choose **Create Databases.** and select the **Easy create** option.
+6. On the **Create database** page, shown following, make sure that the **Standard create** option is chosen, and then choose **PostgreSQL**.
+7. Under **Version**, click on the dropdown menue and select PostgreSQL 12.8-R1. This allows us to select the free tier for DB template.
+9. For **Templates**, select **Free tier**.
+10. Enter a name for the **DB instance identifier**.
+11. For **Master username**, enter a name for the master user or leave it to the default name,
+12. For **Master password**, enter a password or use an auto generated password by clicking the checkbox, **Auto generate a password**
+13. Under the **Connectivity** section, click the **Additional connectivity configuration** drop down to display more options. Under **Publicly accessible** options, select **Yes**.
+14. Scroll to the bottom and seelct **Create database** button. On the main AWS RDS dashboard, you should see your newly created database. It will take some time to be initialized and created. 
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+*Connecting the DB with pgAdmin:*
+1. Navigate to the **Services** drop down tab and select **RDS**.
+2. Under the **Resources** section, select **DB Instances** link.
+3. Click the DB instance.
+4. Copy the **Endpoint** under the **Connectivity & Security** section. This endpoint will be used to connect your pgAdmin to the AWS server. 
+5. Navigate to pgAdmin and login.
+6. Select **Add New Server** link. On the generated popup, enter a **Name** for the server name.
+7. Cick on the **Connection** tab and in the **Host name/address** box, paste in the copied endpoint.  
+8. **Port** number should be defaulted at 5432, postgres should be the defaulted **Maintenance database** unless you choose a diffrent username during the creation of the AWS DB.  
+9. Fill out the **Password** that you used to create the AWS databse. 
+10. Click the blue **Save** button. You should have now sucessfully connected your AWS server to your pgAdmin. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!--################Usage################-->
 
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+# Usage
+- describe use case of our project
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!--################Roadmap################-->
 
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+# Roadmap
+- we can frame our steps from start to finish with checkboxes here
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!--################Communication Protocol################-->
 
+# Communications Protocol
 
-<!-- LICENSE -->
-## License
+General communication:
+For this project all communications will be done via Slack for messaging, and Zoom for meetings. Team members should check Slack at least once per day for any critical messages. 
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Meetings:
+Team meetings will occur 3 times a week on Tuesdays and Thursdays during class hours, and Saturday afternoons. Additional meetings can be scheduled through Slack as needed. 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Pull Requests:
+When submitting a pull request in GitHub, the user should also post a notice in Slack so that all other team members are aware of the outstanding request in GitHub and can review and approve. All pull requests will require a minimum of 3 reviews and approvals from team members before merging.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!--################Contributors################-->
 
+# Contributing
+- Douglas Oliveira
+- Omar Zu'bi
+- Jathuson Jayakumar
+- Danni Yang
+- Byron Krauskopf
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
