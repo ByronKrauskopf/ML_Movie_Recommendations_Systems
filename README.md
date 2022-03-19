@@ -1,4 +1,5 @@
 # Group 3 Final Project
+<div id="top"></div>
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -9,7 +10,7 @@
   <h3 align="center">Best-README-Template</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Movie Recommendation ML Model
     <br />
     <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project"><strong>Explore the docs »</strong></a>
     <br />
@@ -63,12 +64,12 @@ With many streaming services available nowadays, building an efficient movie rec
 - Database type selected and why
 - 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 <!--#############Getting Started################-->
 # Getting Started
 
 ### Prerequisites
 - installation packages and software versions
-- 
 
 ### Relational Database Setup
 Using a database connected with AWS is a convienent way to store diffrent datasets that have relationships with each other.
@@ -102,17 +103,23 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 10. Click the blue **Save** button. You should have now sucessfully connected your AWS server to your pgAdmin. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 <!--################Usage################-->
+
 # Usage
 - describe use case of our project
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 <!--################Roadmap################-->
+
 # Roadmap
 - we can frame our steps from start to finish with checkboxes here
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 <!--################Communication Protocol################-->
+
 # Communications Protocol
 
 General communication:
@@ -125,7 +132,9 @@ Pull Requests:
 When submitting a pull request in GitHub, the user should also post a notice in Slack so that all other team members are aware of the outstanding request in GitHub and can review and approve. All pull requests will require a minimum of 3 reviews and approvals from team members before merging.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 <!--################Contributors################-->
+
 # Contributing
 - Douglas Oliveira
 - Omar Zu'bi
