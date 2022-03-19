@@ -1,5 +1,26 @@
 # Group 3 Final Project
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/resources/logo.png">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
+  <h3 align="center">Best-README-Template</h3>
+
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="#">View Demo</a>
+    ·
+    <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/issues">Request Feature</a>
+  </p>
+</div>
 
 <!--################TABLE OF CONTENTS################-->
 <details>
@@ -40,7 +61,8 @@ With many streaming services available nowadays, building an efficient movie rec
 - techology to be used
 - ML Model and why
 - Database type selected and why
-
+- 
+<p align="right">(<a href="#top">back to top</a>)</p>
 <!--#############Getting Started################-->
 # Getting Started
 
@@ -79,15 +101,17 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 9. Fill out the **Password** that you used to create the AWS databse. 
 10. Click the blue **Save** button. You should have now sucessfully connected your AWS server to your pgAdmin. 
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 <!--################Usage################-->
 # Usage
 - describe use case of our project
-- 
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 <!--################Roadmap################-->
 # Roadmap
 - we can frame our steps from start to finish with checkboxes here
 
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 <!--################Communication Protocol################-->
 # Communications Protocol
 
@@ -100,6 +124,7 @@ Team meetings will occur 3 times a week on Tuesdays and Thursdays during class h
 Pull Requests:
 When submitting a pull request in GitHub, the user should also post a notice in Slack so that all other team members are aware of the outstanding request in GitHub and can review and approve. All pull requests will require a minimum of 3 reviews and approvals from team members before merging.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 <!--################Contributors################-->
 # Contributing
 - Douglas Oliveira
@@ -107,3 +132,6 @@ When submitting a pull request in GitHub, the user should also post a notice in 
 - Jathuson Jayakumar
 - Danni Yang
 - Byron Krauskopf
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
