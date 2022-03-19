@@ -1,12 +1,10 @@
 # Group 3 Final Project
 
 # About the Project
-Problem Statement
-- Selected topic
-- Reason for topic
+Movie Recommendation system from MovieLens dataset
 
-- Description of data source
-- Question to be answered
+With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately 1,000,209 movie ratings of 3,900 movies made by 6,040 Movielens users. The main question we want to answer with the dataset is: can we accurately predict movie suggestions for users based off their previous ratings? 
+
 
 ### Built With 
 - techology to be used
