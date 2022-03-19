@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/Resources/logo.png">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
@@ -78,7 +78,7 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 
 *Initial AWS DB setup instructions:*
 1. Create and sign into your AWS Management console and open the Amazon RDS Console at https://console.aws.amazon.com/rds/.
-2. In the upper-right corner of the AWS Managment Console, Choose the AWS Region where you will create the DB Instance. (CHANGE STEP)
+2. In the upper-right corner of the AWS Managment Console, Choose the AWS Region where you will create the DB Instance. 
 3. In the Navigation pane, choose **Databases**.
 5. Choose **Create Databases.** and select the **Easy create** option.
 6. On the **Create database** page, shown following, make sure that the **Standard create** option is chosen, and then choose **PostgreSQL**.
@@ -101,6 +101,9 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 8. **Port** number should be defaulted at 5432, postgres should be the defaulted **Maintenance database** unless you choose a diffrent username during the creation of the AWS DB.  
 9. Fill out the **Password** that you used to create the AWS databse. 
 10. Click the blue **Save** button. You should have now sucessfully connected your AWS server to your pgAdmin. 
+
+### ERD Database Diagram
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
