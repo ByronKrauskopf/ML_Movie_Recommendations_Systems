@@ -107,6 +107,7 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 
 ### ERD Database Diagram
 
+![ERD](./Resources/ERD_image.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
