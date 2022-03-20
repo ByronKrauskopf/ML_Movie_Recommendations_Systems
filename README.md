@@ -51,14 +51,26 @@
 
 <!--################About################-->
 # Project Overview
-Movie Recommendation system from MovieLens dataset
+__Movie Recommendation system from MovieLens dataset__
 
 Welcome to our final data analytics project. This project aims to tell a cohesive story using a dataset. As a small team, we will create an impressive data visualization app, that will be a cumulative display of the skills we acquired throughout the bootcamp. 
 Our chosen project will be to build a movie recommendation system. With many streaming services available nowadays, building an efficient movie recommendation system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately 1,000,209 movie ratings of 3,900 movies made by 6,040 Movielens users.  The reason we chose this topic is because we have a large dataset to work with and we all enjoy watching movies, and are looking for a recommendation on what to watch next. The main questions we want to answer with the dataset is: 
 
--Can we accurately predict movie suggestions for users based off their previous ratings? 
--What factors influence users movie preferences? 
+## Reasons why chosing the topic
+With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately __movie ratings__ of movies made by __Movielens users__. 
 
+## Source of data  
+MovieLens 25M Dataset: https://grouplens.org/datasets/movielens/25m/
+
+## Potential Customers
+The protential customers of our project are mainly movie corporations, directors and producers. We hope our target customers could use our analysis to refer to the genres that are easiest to score in marketing, and take it as a reference to their future filmmaking accordingly.
+
+## Questions to be answered
+The main question we want to answer with the dataset is: __Can we accurately predict movie suggestions for users based off their previous ratings?__
+ - What kind of movies are tend to get high ratings in current marketing?
+ - What kind of movies are more likely to win awards?
+ - What kind of movies are more popular with audiences?
+ - What kind of movies is more likely to have a high box office?
 ### Built With:
 - AWS
 - Postgres SQL + PgAdmin
