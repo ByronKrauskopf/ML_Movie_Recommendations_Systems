@@ -109,7 +109,7 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 
 ![ERD](./Resources/ERD_image.png)
 
-The schema can be viewed [here](./Resource/ERD_schema.txt)
+The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/ERD_schema.txt)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
