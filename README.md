@@ -28,8 +28,12 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#project-overview">Project Overview</a>
       <ul>
+        <li><a href="#reasons-why-choosing-the-topic">Reasons why choosing the topic</a></li>
+        <li><a href="#data-source">Data Source</a></li>
+        <li><a href="#targeted-shareholders">Targeted Shareholders</a></li>
+        <li><a href="#questions-to-be-answered">Questions to be answered</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -37,15 +41,15 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#relational-database-setup">Relational Database Setup</a></li>
+        <li><a href="#erd-databse-diagram">ERD Database Diagram</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#machine-learning-models">Machine Learning Models</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#communications-protocol">Communications Protocol</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -56,7 +60,7 @@ __Movie Recommendation system from MovieLens dataset__
 Welcome to our final data analytics project. This project aims to tell a cohesive story using a dataset. As a small team, we will create an impressive data visualization app, that will be a cumulative display of the skills we acquired throughout the bootcamp. 
 Our chosen project will be to build a movie recommendation system. With many streaming services available nowadays, building an efficient movie recommendation system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately 1,000,209 movie ratings of 3,900 movies made by 6,040 Movielens users.  The reason we chose this topic is because we have a large dataset to work with and we all enjoy watching movies, and are looking for a recommendation on what to watch next. The main questions we want to answer with the dataset is: 
 
-## Reasons why chosing the topic
+## Reasons why choosing the topic
 With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately __movie ratings__ of movies made by __Movielens users__. 
 
 ## Source of data  
@@ -154,11 +158,15 @@ The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_
 
 **Why we are using it:** Both result and component determination of irregular woodland models are not difficult to decipher, and they can undoubtedly deal with exceptions and nonlinear information. The random forest model can accomplish equivalent prescient exactness on large tabular data with less code and faster performance. Moreover, the Random Forest has a great interpretability and high accuracy
 
-<img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/matrix.PNG" alt="rfc" width="80" height="80">
-
+<div align="center">
+  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/matrix.PNG" alt="rfc">
+</div>
+  
 **The Math:** The model does a row and column sample with a decision tree as its base. By increasing the number of base learners (k), the variance of the model will decrease and the opposite happens if the number of base learners (k) increases. A *Gini* index is calculated to determine the impurity of nodes in the decision tree; typically a decision tree classifier will choose the node with the largest Gini index as the root node. 
 
-<img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/decision_tree_model.PNG" alt="tree_model" width="80" height="80">
+<div align="center">
+  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/decision_tree_model.PNG" alt="tree_model">
+</div>
 
 **Predicted Output:** The bootstrapping Random Forest calculation consolidates gathering learning techniques with the choice tree system to make various arbitrarily drawn choice trees from the information, averaging the outcomes to yield another outcome that regularly prompts solid predictions/classification.
 
@@ -178,19 +186,25 @@ The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_
 
 **2. Cosine Similarity:** Similarity is the cosine of the angle between two vectors A and B. The closer the vectors are (the more they are related) the smaller the angle and larger the cosine coefficient is. The similarity coefficient falls between a value of [-1,1], where 1 shows a perfect relationship between sets A and B. The equation below is the dot product of the vectors A and B divided by their magnitude:
 
-<img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/cosine_coeff.PNG" alt="cosine_coeff" width="80" height="80">
+<div align="center">
+  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/cosine_coeff.PNG" alt="cosine_coeff">
+</div>
 
 **3. Pearson Similarity (ρ):** Similarity is the Pearson coefficient between two vectors. The coefficient is the **product-momment** correlation coefficient and measures the linear correlation between two sets of data. Shown in the equation below, the coefficient is the ratio of the covariance of the two variables and the product of their standard deviations; the results are normalaize and will be a value between -1 and 1, with 1 being a perfect correlation.
 
-<img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/pearson-similarity.png" alt="pearson_coeff" width="80" height="80">
-
+<div align="center">
+  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/pearson-similarity.png" alt="pearson_coeff">
+</div>
+  
 The diagram below shows examples of scatter diagrams with different values of correlation coefficients (ρ):
-<img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/scatter.png" alt="scatterplot" width="80" height="80">
+<img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/scatter.PNG" alt="scatterplot">
 
 The image below shows several sets of (x,y) points with their correlation coefficient between x and y. You can see below that the correlation reflects the strength and direction of the linear relationship (top row), but not the slope of that relationship (middle), or many aspects of nonlinear relationships (bottom). 
 
-<img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/plot_1.PNG" alt="plot1" width="80" height="80">
-
+<div align="center">
+  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/plot_1.PNG" alt="plot1">
+</div>
+  
 More information can be found clicking on this [wiki](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) article here. 
 
 
@@ -202,7 +216,6 @@ The roadmap outlines the task's objectives, and expectations are introduced in a
 Follow our roadmap below to implement our project according to the deliverables, named as segments from 1 to 4.
 
 ![](https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/Capture2_%20Project%20Roadmap_Group3.PNG)
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -224,12 +237,11 @@ When submitting a pull request in GitHub, the user should also post a notice in 
 <!--################Contributors################-->
 
 # Contributing
-
-<a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ByronKrauskopf/Group_3_Final_Project" />
-</a>
-</a>
-
+<div align="center">
+  <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=ByronKrauskopf/Group_3_Final_Project" />
+  </a>
+</div>
 
 - Douglas Oliveira
 - Omar Zu'bi
