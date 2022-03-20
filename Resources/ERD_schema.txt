@@ -10,7 +10,7 @@ Ratings
 -
 userID int fk - Tags.userID
 movieID int pk fk >- Movies.movieID
-rating int
+rating float
 timestamp date fk - Tags.timestamp
 
 Links
@@ -35,4 +35,4 @@ Genome_Scores
 -
 movieID int pk fk >- Movies.movieID
 tagID int pk fk - Genome_tags.tagID
-relevance int
+relevance float
