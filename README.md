@@ -121,7 +121,13 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 <!--################Roadmap################-->
 
 # Roadmap
-- we can frame our steps from start to finish with checkboxes here
+
+The roadmap outlines the task's objectives, and expectations are introduced in a timetable structure utilizing an undertaking guide. Thus, the venture guide can be utilized to oversee partner assumptions and convey plans and direction assets.
+
+Follow our roadmap below to implement our project according to the deliverables, named as segments from 1 to 4.
+
+![](https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/Capture2_%20Project%20Roadmap_Group3.PNG)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
