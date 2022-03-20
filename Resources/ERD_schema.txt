@@ -1,0 +1,38 @@
+ERD Schema
+
+Movies
+-
+movieID int pk 
+title varchar
+genres varchar
+
+Ratings
+-
+userID int fk - Tags.userID
+movieID int pk fk >- Movies.movieID
+rating int
+timestamp date fk - Tags.timestamp
+
+Links
+-
+movieID int pk fk >- Movies.movieID
+imdbID int
+tmdbID int
+
+Tags
+-
+userID int
+movieID int pk fk >- Movies.movieID
+tag varchar fk - Genome_Tags.tag
+timestamp date
+
+Genome_Tags
+-
+tagID int pk 
+tag varchar
+
+Genome_Scores
+-
+movieID int pk fk >- Movies.movieID
+tagID int pk fk - Genome_tags.tagID
+relevance int
