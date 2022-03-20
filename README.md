@@ -50,11 +50,14 @@
 </details>
 
 <!--################About################-->
-# About the Project
+# Project Overview
 Movie Recommendation system from MovieLens dataset
 
-With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately ### movie ratings of ### movies made by ### Movielens users. The main question we want to answer with the dataset is: can we accurately predict movie suggestions for users based off their previous ratings? 
+Welcome to our final data analytics project. This project aims to tell a cohesive story using a dataset. As a small team, we will create an impressive data visualization app, that will be a cumulative display of the skills we acquired throughout the bootcamp. 
+Our chosen project will be to build a movie recommendation system. With many streaming services available nowadays, building an efficient movie recommendation system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately 1,000,209 movie ratings of 3,900 movies made by 6,040 Movielens users.  The reason we chose this topic is because we have a large dataset to work with and we all enjoy watching movies, and are looking for a recommendation on what to watch next. The main questions we want to answer with the dataset is: 
 
+-Can we accurately predict movie suggestions for users based off their previous ratings? 
+-What factors influence users movie preferences? 
 
 ### Built With:
 - AWS
@@ -62,7 +65,7 @@ With many streaming services available nowadays, building an efficient movie rec
 - techology to be used
 - ML Model and why
 - Database type selected and why
-- 
+- Tableau
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!--#############Getting Started################-->
