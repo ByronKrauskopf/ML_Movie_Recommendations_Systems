@@ -30,7 +30,7 @@
     <li>
       <a href="#project-overview">Project Overview</a>
       <ul>
-        <li><a href="#reasons-why-choosing-the-topic">Reasons why choosing the topic</a></li>
+        <li><a href="#project-inspirations">Project Inspirations</a></li>
         <li><a href="#data-source">Data Source</a></li>
         <li><a href="#targeted-shareholders">Targeted Shareholders</a></li>
         <li><a href="#questions-to-be-answered">Questions to be answered</a></li>
@@ -60,7 +60,7 @@ __Movie Recommendation system from MovieLens dataset__
 Welcome to our final data analytics project. This project aims to tell a cohesive story using a dataset. As a small team, we will create an impressive data visualization app, that will be a cumulative display of the skills we acquired throughout the bootcamp. 
 Our chosen project will be to build a movie recommendation system. With many streaming services available nowadays, building an efficient movie recommendation system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately 1,000,209 movie ratings of 3,900 movies made by 6,040 Movielens users.  The reason we chose this topic is because we have a large dataset to work with and we all enjoy watching movies, and are looking for a recommendation on what to watch next. The main questions we want to answer with the dataset is: 
 
-## Reasons why choosing the topic
+## Project Inspirations
 With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately __movie ratings__ of movies made by __Movielens users__. 
 
 ## Data Source
