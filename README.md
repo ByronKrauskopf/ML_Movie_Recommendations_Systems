@@ -227,13 +227,13 @@ Follow our roadmap below to implement our project according to the deliverables,
 
 # Communications Protocol
 
-General communication:
+**1) General communication:**
 For this project all communications will be done via Slack for messaging and Zoom for meetings. Team members should check Slack at least once per day for any critical messages. 
 
-Meetings:
+**2) Meetings:**
 Team meetings will occur 3 times a week on Tuesdays and Thursdays during class hours, and Saturday afternoons. Additional meetings can be scheduled through Slack as needed. 
 
-Pull Requests:
+**3) Pull Requests:**
 When submitting a pull request in GitHub, the user should also post a notice in Slack so that all other team members are aware of the outstanding request in GitHub and can review and approve. All pull requests will require a minimum of 3 reviews and approvals from team members before merging.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
