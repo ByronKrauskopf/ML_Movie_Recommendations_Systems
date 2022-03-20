@@ -58,23 +58,23 @@
 __Movie Recommendation system from MovieLens dataset__
 
 Welcome to our final data analytics project. This project aims to tell a cohesive story using a dataset. As a small team, we will create an impressive data visualization app, that will be a cumulative display of the skills we acquired throughout the bootcamp. 
-Our chosen project will be to build a movie recommendation system. With many streaming services available nowadays, building an efficient movie recommendation system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately 1,000,209 movie ratings of 3,900 movies made by 6,040 Movielens users.  The reason we chose this topic is because we have a large dataset to work with and we all enjoy watching movies, and are looking for a recommendation on what to watch next. The main questions we want to answer with the dataset is: 
+Our chosen project will be to build a movie recommendation system. With many streaming services available nowadays, building an efficient movie recommendation system has become more important due to the increase in demand to create customized content for consumers. We will be using the MovieLens dataset to build a movie recommender system. It contains approximately 1,000,209 movie ratings of 3,900 movies made by 6,040 MovieLens users.  The reason we chose this topic is because we have a large dataset to work with and we all enjoy watching movies and are looking for a recommendation on what to watch next. The main questions we want to answer with the dataset is: 
 
 ## Project Inspirations
-With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately __movie ratings__ of movies made by __Movielens users__. 
+With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the MovieLens dataset to build a movie recommender system. It contains approximately __movie ratings__ of movies made by __MovieLens users__. 
 
 ## Data Source
 MovieLens 25M Dataset: https://grouplens.org/datasets/movielens/25m/
 
 ## Targeted Shareholders
-The protential customers of our project are mainly movie corporations, directors and producers. We hope our target customers could use our analysis to refer to the genres that are easiest to score in marketing, and take it as a reference to their future filmmaking accordingly.
+The potential customers of our project are mainly movie corporations, directors, and producers. We hope our target customers could use our analysis to refer to the genres that are easiest to score in marketing and take it as a reference to their future filmmaking accordingly.
 
 ## Questions to be answered
 The main question we want to answer with the dataset is: __Can we accurately predict movie suggestions for users based off their previous ratings?__
- - What kind of movies are tend to get high ratings in current marketing?
- - What kind of movies are more likely to win awards?
- - What kind of movies are more popular with audiences?
- - What kind of movies is more likely to have a high box office?
+ - What genres of movies score high ratings in current market?
+ - What genres of movies are likely to win awards?
+ - What genres of movies are likely to have a high box office?
+
 ### Built With:
 - AWS
 - Postgres SQL + PgAdmin
@@ -92,7 +92,7 @@ The main question we want to answer with the dataset is: __Can we accurately pre
 - installation packages and software versions
 
 ### Relational Database Setup
-Using a database connected with AWS is a convienent way to store diffrent datasets that have relationships with each other.
+Using a database connected with AWS is a convenient way to store different datasets that have relationships with each other.
 
 Additional instructions to set up a PostgreSQL database instance with Amazon Web Services (AWS) can be found in this [link](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.PostgreSQL.html).
 
@@ -102,13 +102,13 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 3. In the Navigation pane, choose **Databases**.
 5. Choose **Create Databases.** and select the **Easy create** option.
 6. On the **Create database** page, shown following, make sure that the **Standard create** option is chosen, and then choose **PostgreSQL**.
-7. Under **Version**, click on the dropdown menue and select PostgreSQL 12.8-R1. This allows us to select the free tier for DB template.
+7. Under **Version**, click on the dropdown menu and select PostgreSQL 12.8-R1. This allows us to select the free tier for DB template.
 9. For **Templates**, select **Free tier**.
 10. Enter a name for the **DB instance identifier**.
 11. For **Master username**, enter a name for the master user or leave it to the default name,
 12. For **Master password**, enter a password or use an auto generated password by clicking the checkbox, **Auto generate a password**
 13. Under the **Connectivity** section, click the **Additional connectivity configuration** drop down to display more options. Under **Publicly accessible** options, select **Yes**.
-14. Scroll to the bottom and seelct **Create database** button. On the main AWS RDS dashboard, you should see your newly created database. It will take some time to be initialized and created. 
+14. Scroll to the bottom and select **Create database** button. On the main AWS RDS dashboard, you should see your newly created database. It will take some time to be initialized and created. 
 
 *Connecting the DB with pgAdmin:*
 1. Navigate to the **Services** drop down tab and select **RDS**.
@@ -117,10 +117,10 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 4. Copy the **Endpoint** under the **Connectivity & Security** section. This endpoint will be used to connect your pgAdmin to the AWS server. 
 5. Navigate to pgAdmin and login.
 6. Select **Add New Server** link. On the generated popup, enter a **Name** for the server name.
-7. Cick on the **Connection** tab and in the **Host name/address** box, paste in the copied endpoint.  
-8. **Port** number should be defaulted at 5432, postgres should be the defaulted **Maintenance database** unless you choose a diffrent username during the creation of the AWS DB.  
-9. Fill out the **Password** that you used to create the AWS databse. 
-10. Click the blue **Save** button. You should have now sucessfully connected your AWS server to your pgAdmin. 
+7. Click on the **Connection** tab and in the **Host name/address** box, paste in the copied endpoint.  
+8. **Port** number should be defaulted at 5432, postgres should be the defaulted **Maintenance database** unless you choose a different username during the creation of the AWS DB.  
+9. Fill out the **Password** that you used to create the AWS database. 
+10. Click the blue **Save** button. You should have now successfully connected your AWS server to your pgAdmin. 
 
 ### ERD Database Diagram
 
@@ -175,7 +175,7 @@ The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_
 
 **The Model:** This model is based on the similarity in preferences between two users and uses this to generate recommendations. The algorithm will generate an item similarity matrix of look-alikes for each movie that will be used to recommend look-alike movies to the user. For this similarity matrix we can use either a Jaccard Similarity, a Cosine Similarity or a Pearson Similarity.
 
-**Why we are using it:** We are using Memory-Based Collaborative Filtering because of its ease of implementation and its quality of predictions. We are specifically using an Item-Item Collaborative Filtering instead of a User-User Collaborative Filtering model because it is much less resource intensive for when new users are added since the similarity matrix is built off of the static movie list instead of the users. 
+**Why we are using it:** We are using Memory-Based Collaborative Filtering because of its ease of implementation and its quality of predictions. We are specifically using an Item-Item Collaborative Filtering instead of a User-User Collaborative Filtering model because it is much less resource intensive for when new users are added since the similarity matrix is built from the static movie list instead of the users. 
 
 **Predicted Output:** The output is expected to be recommendations for a user based on the models predictions of what that user would rate the recommended movies by identifying what similar users have rated those movies.
 
@@ -183,7 +183,7 @@ The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_
 
 **The Math:** There are three distance metrics used in the collaborative filtering in the comparison matrix:
 
-**1. Jaccard Similarity:** Similarity is based on the number of users that have rated items A and B divided by the number of users who have rated either A or B. Jaccard similarity is commonly used when boolean values are used instead of numeric ratings. 
+**1. Jaccard Similarity:** Similarity is based on the number of users that have rated items A and B divided by the number of users who have rated either A or B. Jaccard similarity is commonly used when Boolean values are used instead of numeric ratings. 
 
 **2. Cosine Similarity:** Similarity is the cosine of the angle between two vectors A and B. The closer the vectors are (the more they are related) the smaller the angle and larger the cosine coefficient is. The similarity coefficient falls between a value of [-1,1], where 1 shows a perfect relationship between sets A and B. The equation below is the dot product of the vectors A and B divided by their magnitude:
 
@@ -191,7 +191,7 @@ The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_
   <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/cosine_coeff.PNG" alt="cosine_coeff">
 </div>
 
-**3. Pearson Similarity (ρ):** Similarity is the Pearson coefficient between two vectors. The coefficient is the **product-momment** correlation coefficient and measures the linear correlation between two sets of data. Shown in the equation below, the coefficient is the ratio of the covariance of the two variables and the product of their standard deviations; the results are normalaize and will be a value between -1 and 1, with 1 being a perfect correlation.
+**3. Pearson Similarity (ρ):** Similarity is the Pearson coefficient between two vectors. The coefficient is the **product-moment** correlation coefficient and measures the linear correlation between two sets of data. Shown in the equation below, the coefficient is the ratio of the covariance of the two variables and the product of their standard deviations; the results are normalize  and will be a value between -1 and 1, with 1 being a perfect correlation.
 
 <div align="center">
   <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/pearson-similarity.png" alt="pearson_coeff">
@@ -226,7 +226,7 @@ Follow our roadmap below to implement our project according to the deliverables,
 # Communications Protocol
 
 General communication:
-For this project all communications will be done via Slack for messaging, and Zoom for meetings. Team members should check Slack at least once per day for any critical messages. 
+For this project all communications will be done via Slack for messaging and Zoom for meetings. Team members should check Slack at least once per day for any critical messages. 
 
 Meetings:
 Team meetings will occur 3 times a week on Tuesdays and Thursdays during class hours, and Saturday afternoons. Additional meetings can be scheduled through Slack as needed. 
