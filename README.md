@@ -132,8 +132,60 @@ The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!--################Roadmap################-->
+<!--################Machine Learning Models #################-->
 
+# Machine Learning Models
+
+### **1 - Model Based Collaborative Filtering Using Matrix Factorization (MF)**
+
+**The Model:** The model is a collaborative filtering method that finds the relationship between items and users’ entities. The model learns the latent preferences of users and the latent attributes of items from known ratings to find similarity and make a recommendation. The model uses low-rank matrix factorization to derive the preferences from the dataset. 
+
+**Why we are using it:** The model can discover hidden correlation/features in the dataset, remove redundant and noisy features, and can access easier data storage and processing. 
+
+**The Math:** The matrix factorization method used for this method is the ***Singular value decomposition (SVD)***. The algorithm takes a matrix in 
+
+**Features of the model:** Movie ratings
+
+**Predicted Output:** List of recommended movies
+
+### **2 - Random Forest Classifiers**
+
+**The Model:** Random forest classifiers are a kind of gathering learning model that joins various more modest models into a more vigorous and precise model. Random forest models utilize weak learner algorithms (choice trees) and join their result to make a last order (or regression) choice.
+
+**Why we are using it:** Both result and component determination of irregular woodland models are not difficult to decipher, and they can undoubtedly deal with exceptions and nonlinear information. The random forest model can accomplish equivalent prescient exactness on large tabular data with less code and faster performance. Moreover, the Random Forest has a great interpretability and high accuracy
+
+**The Math:** The model does a row and column sample with a decision tree as its base. By increasing the number of base learners (k), the variance of the model will decrease and the opposite happens if the number of base learners (k) increases. A *Gini* index is calculated to determine the impurity of nodes in the decision tree; typically a decision tree classifier will choose the node with the largest Gini index as the root node. 
+
+**Predicted Output:** The bootstrapping Random Forest calculation consolidates gathering learning techniques with the choice tree system to make various arbitrarily drawn choice trees from the information, averaging the outcomes to yield another outcome that regularly prompts solid predictions/classification.
+
+### **3 - Memory-Based Item-item Collaborative Filtering**
+
+**The Model:** This model is based on the similarity in preferences between two users and uses this to generate recommendations. The algorithm will generate an item similarity matrix of look-alikes for each movie that will be used to recommend look-alike movies to the user. For this similarity matrix we can use either a Jaccard Similarity, a Cosine Similarity or a Pearson Similarity.
+
+**Why we are using it:** We are using Memory-Based Collaborative Filtering because of its ease of implementation and its quality of predictions. We are specifically using an Item-Item Collaborative Filtering instead of a User-User Collaborative Filtering model because it is much less resource intensive for when new users are added since the similarity matrix is built off of the static movie list instead of the users. 
+
+**Predicted Output:** The output is expected to be recommendations for a user based on the models predictions of what that user would rate the recommended movies by identifying what similar users have rated those movies.
+
+**Evaluation:** We will use the Root Mean Squared Error (RMSE) metric to evaluate the accuracy of our predictions as this is a popular and standard metric.
+
+**The Math:** There are three distance metrics used in the collaborative filtering in the comparison matrix:
+
+**1. Jaccard Similarity:** Similarity is based on the number of users that have rated items A and B divided by the number of users who have rated either A or B. Jaccard similarity is commonly used when boolean values are used instead of numeric ratings. 
+
+**2. Cosine Similarity:** Similarity is the cosine of the angle between two vectors A and B. The closer the vectors are (the more they are related) the smaller the angle and larger the cosine coefficient is. The similarity coefficient falls between a value of [-1,1], where 1 shows a perfect relationship between sets A and B. The equation below is the dot product of the vectors A and B divided by their magnitude:
+
+
+**3. Pearson Similarity (ρ):** Similarity is the Pearson coefficient between two vectors. The coefficient is the **product-momment** correlation coefficient and measures the linear correlation between two sets of data. Shown in the equation below, the coefficient is the ratio of the covariance of the two variables and the product of their standard deviations; the results are normalaize and will be a value between -1 and 1, with 1 being a perfect correlation.
+
+
+The diagram below shows examples of scatter diagrams with different values of correlation coefficients (ρ):
+
+The image below shows several sets of (x,y) points with their correlation coefficient between x and y. You can see below that the correlation reflects the strength and direction of the linear relationship (top row), but not the slope of that relationship (middle), or many aspects of nonlinear relationships (bottom). 
+
+More information can be found clicking on this [wiki](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) article here. 
+
+
+<!--################Roadmap################-->
 # Roadmap
 
 The roadmap outlines the task's objectives, and expectations are introduced in a timetable structure utilizing an undertaking guide. Thus, the venture guide can be utilized to oversee partner assumptions and convey plans and direction assets.
@@ -163,7 +215,6 @@ When submitting a pull request in GitHub, the user should also post a notice in 
 <!--################Contributors################-->
 
 # Contributing
-
 
 <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ByronKrauskopf/Group_3_Final_Project" />
