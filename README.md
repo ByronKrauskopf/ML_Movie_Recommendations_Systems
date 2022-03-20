@@ -199,7 +199,9 @@ The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_
   
 The diagram below shows examples of scatter diagrams with different values of correlation coefficients (ρ):
 
-<img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/scatter.PNG" alt="scatterplot">
+<div align="center">
+  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/scatter.PNG" alt="scatterplot">
+</div>
 
 The image below shows several sets of (x,y) points with their correlation coefficient between x and y. You can see below that the correlation reflects the strength and direction of the linear relationship (top row), but not the slope of that relationship (middle), or many aspects of nonlinear relationships (bottom). 
 
