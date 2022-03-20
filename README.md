@@ -42,7 +42,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#relational-database-setup">Relational Database Setup</a></li>
-        <li><a href="#erd-databse-diagram">ERD Database Diagram</a></li>
+        <li><a href="#erd-database-diagram">ERD Database Diagram</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -63,10 +63,10 @@ Our chosen project will be to build a movie recommendation system. With many str
 ## Reasons why choosing the topic
 With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately __movie ratings__ of movies made by __Movielens users__. 
 
-## Source of data  
+## Data Source
 MovieLens 25M Dataset: https://grouplens.org/datasets/movielens/25m/
 
-## Potential Customers
+## Targeted Shareholders
 The protential customers of our project are mainly movie corporations, directors and producers. We hope our target customers could use our analysis to refer to the genres that are easiest to score in marketing, and take it as a reference to their future filmmaking accordingly.
 
 ## Questions to be answered
@@ -78,10 +78,11 @@ The main question we want to answer with the dataset is: __Can we accurately pre
 ### Built With:
 - AWS
 - Postgres SQL + PgAdmin
-- techology to be used
-- ML Model and why
-- Database type selected and why
+- Python 3.4
 - Tableau
+- HTML
+- JS
+- Flask
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!--#############Getting Started################-->
@@ -197,6 +198,7 @@ The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_
 </div>
   
 The diagram below shows examples of scatter diagrams with different values of correlation coefficients (ρ):
+
 <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/scatter.PNG" alt="scatterplot">
 
 The image below shows several sets of (x,y) points with their correlation coefficient between x and y. You can see below that the correlation reflects the strength and direction of the linear relationship (top row), but not the slope of that relationship (middle), or many aspects of nonlinear relationships (bottom). 
