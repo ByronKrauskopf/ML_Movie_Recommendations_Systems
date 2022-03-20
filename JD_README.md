@@ -51,10 +51,23 @@
 
 <!--################About################-->
 # About the Project
-Movie Recommendation system from MovieLens dataset
+__Movie Recommendation system from MovieLens dataset__
 
-With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately ### movie ratings of ### movies made by ### Movielens users. The main question we want to answer with the dataset is: can we accurately predict movie suggestions for users based off their previous ratings? 
+## Reasons why chosing the topic
+With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the Movielens dataset to build a movie recommender system. It contains approximately __movie ratings__ of movies made by __Movielens users__. 
 
+## Source of data  
+MovieLens 25M Dataset: https://grouplens.org/datasets/movielens/25m/
+
+## Potential Customers
+The protential customers of our project are mainly movie corporations, directors and producers. We hope our target customers could use our analysis to refer to the genres that are easiest to score in marketing, and take it as a reference to their future filmmaking accordingly.
+
+## Questions to be answered
+The main question we want to answer with the dataset is: __Can we accurately predict movie suggestions for users based off their previous ratings?__
+ - What kind of movies are tend to get high ratings in current marketing?
+ - What kind of movies are more likely to win awards?
+ - What kind of movies are more popular with audiences?
+ - What kind of movies is more likely to have a high box office?
 
 ### Built With:
 - AWS
