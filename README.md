@@ -109,6 +109,8 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 
 ![ERD](./Resources/ERD_image.png)
 
+The schema can be viewed [here](./Resource/ERD_schema.txt]
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!--################Usage################-->
