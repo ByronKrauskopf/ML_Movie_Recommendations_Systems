@@ -70,7 +70,7 @@ MovieLens 25M Dataset: https://grouplens.org/datasets/movielens/25m/
 The potential customers of our project are mainly movie corporations, directors, and producers. We hope our target customers could use our analysis to refer to the genres that are easiest to score in marketing and take it as a reference to their future filmmaking accordingly.
 
 ## Questions to be answered
-The main question we want to answer with the dataset is: __Can we accurately predict movie suggestions for users based off their previous ratings?__
+The principle question we need to address with the dataset is: __Can we accurately predict movie suggestions for users based off their previous ratings?__
  - What genres of movies score high ratings in current market?
  - What genres of movies are likely to win awards?
  - What genres of movies are likely to have a high box office?
@@ -98,7 +98,7 @@ Additional instructions to set up a PostgreSQL database instance with Amazon Web
 
 *Initial AWS DB setup instructions:*
 1. Create and sign into your AWS Management console and open the Amazon RDS Console at https://console.aws.amazon.com/rds/.
-2. In the upper-right corner of the AWS Managment Console, Choose the AWS Region where you will create the DB Instance. 
+2. In the upper-right corner related to the AWS Managment Console, Choose the AWS Region where you will create the DB Instance. 
 3. In the Navigation pane, choose **Databases**.
 5. Choose **Create Databases.** and select the **Easy create** option.
 6. On the **Create database** page, shown following, make sure that the **Standard create** option is chosen, and then choose **PostgreSQL**.
@@ -183,15 +183,15 @@ The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_
 
 **The Math:** There are three distance metrics used in the collaborative filtering in the comparison matrix:
 
-**1. Jaccard Similarity:** Similarity is based on the number of users that have rated items A and B divided by the number of users who have rated either A or B. Jaccard similarity is commonly used when Boolean values are used instead of numeric ratings. 
+**1. Jaccard Similarity:** Similitude depends on the quantity of clients that have evaluated things A and B divided by the quantity of clients who have appraised either A or B. Jaccard similarity is commonly used when Boolean values are used instead of numeric ratings. 
 
-**2. Cosine Similarity:** Similarity is the cosine of the angle between two vectors A and B. The closer the vectors are (the more they are related) the smaller the angle and larger the cosine coefficient is. The similarity coefficient falls between a value of [-1,1], where 1 shows a perfect relationship between sets A and B. The equation below is the dot product of the vectors A and B divided by their magnitude:
+**2. Cosine Similarity:** Similarity is the cosine related to the angle between two vectors A and B. The closer the vectors are (the more they are related) the smaller the angle and larger the cosine coefficient is. The similarity coefficient falls between a value of [-1,1], where 1 shows a perfect relationship between sets A and B. The equation below is the dot product of the vectors A and B divided by their magnitude:
 
 <div align="center">
   <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/cosine_coeff.PNG" alt="cosine_coeff">
 </div>
 
-**3. Pearson Similarity (ρ):** Similarity is the Pearson coefficient between two vectors. The coefficient is the **product-moment** correlation coefficient and measures the linear correlation between two sets of data. Shown in the equation below, the coefficient is the ratio of the covariance of the two variables and the product of their standard deviations; the results are normalize  and will be a value between -1 and 1, with 1 being a perfect correlation.
+**3. Pearson Similarity (ρ):** Similarity is the Pearson coefficient between two vectors. The coefficient is the **product-moment** correlation coefficient and measures the linear correlation between two sets of data. Shown in the equation below, the coefficient is the ratio of the covariance of the two factors and the result of their standard deviations; the results are normalize  and will be a value between -1 and 1, with 1 being a perfect correlation.
 
 <div align="center">
   <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/pearson-similarity.png" alt="pearson_coeff">
@@ -203,13 +203,13 @@ The diagram below shows examples of scatter diagrams with different values of co
   <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/scatter.PNG" alt="scatterplot">
 </div>
 
-The image below shows several sets of (x,y) points with their correlation coefficient between x and y. You can see below that the correlation reflects the strength and direction of the linear relationship (top row), but not the slope of that relationship (middle), or many aspects of nonlinear relationships (bottom). 
+The image below shows several sets of (x,y) points with their correlation coefficient between x and y. You can see below that the correlation reflects the strength and direction of linear relationship (top column), however not the incline of that relationship (center), or many aspects of nonlinear relationships (bottom). 
 
 <div align="center">
   <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/plot_1.PNG" alt="plot1">
 </div>
   
-More information can be found clicking on this [wiki](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) article here. 
+More data can be found just clicking on this  [wiki](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) article here. 
 
 
 <!--################Roadmap################-->
