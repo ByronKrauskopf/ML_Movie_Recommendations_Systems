@@ -147,7 +147,7 @@ The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_
 
 **Why we are using it:** The model can discover hidden correlation/features in the dataset, remove redundant and noisy features, and can access easier data storage and processing. 
 
-**The Math:** The matrix factorization method used for this method is the ***Singular value decomposition (SVD)***. The algorithm takes a matrix in 
+**The Math:** The matrix factorization method used for this method is the ***Singular value decomposition (SVD)***. 
 
 **Features of the model:** Movie ratings
 
