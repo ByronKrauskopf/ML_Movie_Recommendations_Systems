@@ -1,3 +1,6 @@
+#ignore config files
+config.py
+
 #ignore raw_data files
 raw_genome_scores.csv
 raw_genome_tags.csv
