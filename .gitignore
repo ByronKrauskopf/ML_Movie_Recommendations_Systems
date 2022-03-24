@@ -1,6 +1,15 @@
 #ignore config files
 config.py
 
+#ignore clean_data files
+clean_genome_scores.csv
+clean_genome_tags.csv
+clean_links.csv
+clean_movies.csv
+clean_ratings.csv
+clean_tags.csv
+clean_data_README.txt
+
 #ignore raw_data files
 raw_genome_scores.csv
 raw_genome_tags.csv
