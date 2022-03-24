@@ -27,11 +27,6 @@ movieID int pk fk >- Movies.movieID
 tag varchar fk - Genome_Tags.tag
 timestamp date
 
-Movie_Images
--
-movieID int pk fk >- Movies.movieID
-image_link varchar
-
 Genome_Tags
 -
 tagID int pk 
