@@ -1,3 +1,12 @@
+#ignore raw_data files
+raw_genome_scores.csv
+raw_genome_tags.csv
+raw_links.csv
+raw_movies.csv
+raw_ratings.csv
+raw_tags.csv
+raw_data_README.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
