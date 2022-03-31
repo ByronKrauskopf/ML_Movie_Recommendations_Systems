@@ -1,4 +1,4 @@
-# Group 3 Final Project
+# ML_Movie_Recommendations_Systems
 <div id="top"></div>
 <!-- PROJECT LOGO -->
 <br />
@@ -45,7 +45,7 @@
         <li><a href="#erd-database-diagram">ERD Database Diagram</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#Acknowledgements">Acknowledgements</a></li>
     <li><a href="#machine-learning-models">Machine Learning Models</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#communications-protocol">Communications Protocol</a></li>
@@ -198,8 +198,8 @@ The ETL process consisted of the following steps:
 
 <!--################Usage################-->
 
-# Usage
-- describe use case of our project
+# Acknowledgements
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
