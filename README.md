@@ -130,6 +130,72 @@ The schema can be viewed [here](https://github.com/ByronKrauskopf/Group_3_Final_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### ETL Process
+
+The ETL process was performed using python in jupyter notebooks. The data was then uploaded to PostgresSQL using SQlAlchemy. The code can be reviewed [here](https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/ETL_code/ETL%20.ipynb)
+
+Successful upload to the database was confirmed using a series of SQL queries that can be found [here](https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/ETL_code/ETL_result_queries.sql)
+
+The ETL process consisted of the following steps:
+
+1) Links table cleaning
+  - Load raw data file 'raw_links.csv'
+  - Check for null values.
+      - 107 null values were found in the tmdbId column. These are acceptable in the data as this column is not intended to be used.
+  - Check data types
+  - Convert tmbdId data type from float to integer in accordance with ERD.
+  - Fill all Nan's in tmdbId column with "0" as placeholder
+  - Export cleaned data as 'clean_links.csv' file ready for upload to database.
+
+2) Tags table cleaning
+  - Load raw data file 'raw_tags.csv'
+  - Check for null values.
+      - 16 null values found in tags column. These are acceptable in the data as this column is not intended to be used.
+  - Check data types
+  - convert timestamp column from Unix to standard format.
+  - Export cleaned data as 'clean_tags.csv' file ready for upload to database.
+
+3) Movies table cleaning
+  - Load raw data file 'raw_movies.csv'
+  - Use regex to separate release year from title column ito it's own year column.
+  - Check for null values.
+      - 410 null values found in year column. These are acceptable in the data as our primary focus is on the movie title and they constitue only a very samll porpotoin of the total data set. 
+  - Check data types
+  - Convert year data type from object to integer in accordance with ERD.
+  - Fill all Nan's in year column with "0" as placeholder
+  - Export cleaned data as 'clean_movies.csv' file ready for upload to database.
+
+4) Ratings table cleaning
+  - Load raw data file 'raw_ratings.csv'
+  - Check for null values.
+  - Check data types
+  - Convert timestamp column from Unix to standard format.
+  - Export cleaned data as 'clean_ratings.csv' file ready for upload to database.
+
+5) Genome Scores table cleaning
+  - Load raw data file 'raw_genome_scores.csv'
+  - Check for null values.
+  - Check data types
+  - Export cleaned data as 'clean_genome_scores.csv' file ready for upload to database.
+
+5) Genome Tags table cleaning
+  - Load raw data file 'raw_genome_tags.csv' 
+  - Check for null values.
+  - Check data types
+  - Export cleaned data as 'clean_genome_scores.csv' file ready for upload to database.
+
+6) Load cleaned data csvs into PostgreSQL
+  - create database connection string and engine
+  - import cleaned csv files and chunk into groups of 100,000
+  - export data to PostgreSQL 
+  - initiate, run, and print timer during upload to monitor progress
+
+7) Confirm successful upload using SQl queries
+  - Query SELECT * from each table to check all columns loaded
+  - Query SELECT COUNT * form each table to check that all rows loaded
+  - Use ALTER TABLE for each table to drop the unneccessary index column that    uploaded with the data from python.
+
+
 <!--################Usage################-->
 
 # Usage
