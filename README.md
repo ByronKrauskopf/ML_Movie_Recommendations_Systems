@@ -277,6 +277,34 @@ The image below shows several sets of (x,y) points with their correlation coeffi
   
 More data can be found just clicking on this  [wiki](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) article here. 
 
+<!--################ Dashboard #################-->
+
+# Dashboard
+
+### Description of the tool that will be used to create the final dashboard
+
+After the ETL process, the group will develop a data analysis using Tableau to visualize the data. We will do all the investigation and data analysis to answer all questions related to the project of movie recommendation. Initially, we will create a worksheet with several graphs and specific studies. Soon after, we will be preparing a template for our Dashboard, containing the main analyzes and graphs. Finally, we will organize the story by grouping all the results obtained and presenting the highlights and recommendations to the stakeholders.
+
+Our Group decided to use Tableau and Dashboard to present all relationship, patterns, findings, and highlights from the data analysis process. 
+
+The dashboard blueprint consists of eight graphs, and all elements are connected and interactive using Tableau as a tool for visualization.
+
+### Description of interactive element(s):
+
+Graph 1:  Numerical overview related to data analysis. The objective is to show an overview with general project numbers.
+Graph 2: Number of movies by genre. The objective is to evaluate the data relationship between movies vs genre
+Graph 3:  Top rated movies. The objective is to verify which would be the movie (title) with the highest rating among users Top-rated
+Graph 4:  The number of films released per year. The objective is to evaluate the relationship between films released per year data. Check if there is any concentration of launches in a given year, any other relationship number
+Graph 5: Total users (Id's) per year. The objective is to evaluate the number of users who evaluated the films per year.
+Graph 6: Heatmap with the highest rated movies. The objective is to verify which are the movies with the highest rating by users
+Graph 7: Number of movies by genre. The objective is to evaluate the relationship of films by genre. Which genre has the most movies?
+Graph 8: The number of ratings. The objective is to verify the distribution of all movie ratings.
+
+Follow below the image of our dashboard:
+
+### Storyboard on Google Slide(s):
+
+To end, we develop an Storyboard on Google Slide(s) available on following link: https://docs.google.com/presentation/d/1VwYMOzThBx8R92Co6KbsnSdxZkLTR5lw/edit?usp=sharing&ouid=110832098454737220689&rtpof=true&sd=true.
 
 <!--################Roadmap################-->
 # Roadmap
