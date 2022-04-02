@@ -302,9 +302,19 @@ Graph 8: The number of ratings. The objective is to verify the distribution of a
 
 Follow below the image of our dashboard:
 
+![](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/Douglas/Dashboard/Capture_%20Dashboard_description%20of%20interactive%20elements.PNG)
+
 ### Storyboard on Google Slide(s):
 
 To end, we develop an Storyboard on Google Slide(s) available on following link: https://docs.google.com/presentation/d/1VwYMOzThBx8R92Co6KbsnSdxZkLTR5lw/edit?usp=sharing&ouid=110832098454737220689&rtpof=true&sd=true.
+
+### Tableau Visualization and Storyboard
+
+We are using Tableau as a tool for visualization and to present a storyboard to the stakeholders.
+
+We enhance our visualization by adding some features on the Tableau, such as bar chart race and hyperlink. The bar chart race is a visualization feature to show which genres were released in animation mode. The hyperlink is a feature that creates a link clicking on the movie title and opening a new windows tab on the imdb page showing additional information related to the movie selected, such as movie image, year, and others.
+
+Our tableau file is available on the following link: https://public.tableau.com/app/profile/douguot/viz/MoviesRecommendations/Story1
 
 <!--################Roadmap################-->
 # Roadmap
