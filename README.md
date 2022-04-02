@@ -195,12 +195,6 @@ The ETL process consisted of the following steps:
   - Query SELECT COUNT * form each table to check that all rows loaded
   - Use ALTER TABLE for each table to drop the unneccessary index column that    uploaded with the data from python.
 
-
-<!--################Usage################-->
-
-# Acknowledgements
-
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!--################Machine Learning Models #################-->
@@ -339,6 +333,13 @@ Team meetings will occur 3 times a week on Tuesdays and Thursdays during class h
 
 **3) Pull Requests:**
 When submitting a pull request in GitHub, the user should also post a notice in Slack so that all other team members are aware of the outstanding request in GitHub and can review and approve. All pull requests will require a minimum of 3 reviews and approvals from team members before merging.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!--################Acknowledgements################-->
+
+# Acknowledgements
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
