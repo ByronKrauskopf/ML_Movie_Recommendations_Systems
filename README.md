@@ -45,10 +45,10 @@
         <li><a href="#erd-database-diagram">ERD Database Diagram</a></li>
       </ul>
     </li>
-    <li><a href="#Acknowledgements">Acknowledgements</a></li>
     <li><a href="#machine-learning-models">Machine Learning Models</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#communications-protocol">Communications Protocol</a></li>
+    <li><a href="#Acknowledgements">Acknowledgements</a></li>
     <li><a href="#contributing">Contributing</a></li>
   </ol>
 </details>
