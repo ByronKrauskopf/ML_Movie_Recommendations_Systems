@@ -344,6 +344,8 @@ Data source - https://grouplens.org/datasets/movielens/
 
 Machine Learning Article - https://towardsdatascience.com/the-4-recommendation-engines-that-can-predict-your-movie-tastes-109dc4e10c52
 
+Code Example - https://github.com/khanhnamle1994/movielens/blob/master/SVD_Model.ipynb
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!--################Contributors################-->
