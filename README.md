@@ -203,15 +203,18 @@ The ETL process consisted of the following steps:
 
 ### **1 - Model Based Collaborative Filtering Using Matrix Factorization (MF)**
 
-**The Model:** The model is a collaborative filtering method that finds the relationship between items and users’ entities. The model learns the latent preferences of users and the latent attributes of items from known ratings to find similarity and make a recommendation. The model uses low-rank matrix factorization to derive the preferences from the dataset. 
+**The Model:** The model is a collaborative filtering method that finds the relationship between items and users’ entities. The model learns the latent preferences of users and the latent attributes of items from known ratings to find similarity and make a recommendation. The model uses low-rank matrix factorization to derive the preferences from the dataset. Matrix factorization is the preferred model for recommender systems since it can deal with scalability and sparsity better than Memory-based collaborative filtering.  
 
-**Why we are using it:** The model can discover hidden correlation/features in the dataset, remove redundant and noisy features, and can access easier data storage and processing. 
+**Why we are using it:** The model can discover hidden correlation/features in the dataset, remove redundant and noisy features, and can access easier data storage and processing.
 
-**The Math:** The matrix factorization method used for this method is the ***Singular value decomposition (SVD)***. 
+**The Math & Decision-making:** The matrix factorization method used for this method is the **Singular value decomposition (SVD)**. The matrix is built using user ids and movies and then SVD is used to create the best lower rank matrix that is the closest approximation to the original matrix. Once the matrix is decomposed, a function is a built to recommend movies for any user. Although movie genres are not used as a feature, the model does pick up on these underlying preferences for users based off the movies they have already rated. Once the model is trained, it can be used to predict the movie rating for a user for any movie in the database. 
+Features of the model: Movie ratings
 
 **Features of the model:** Movie ratings
 
 **Predicted Output:** List of recommended movies
+
+**Splitting and Training the data set** : Due to the dataset being large and the capacity of our CPUs being limited, the dataset has not been split yet. The likely split for the training and testing set would be a 75% and 25% split. 
 
 ### **2 - Random Forest Classifiers**
 
