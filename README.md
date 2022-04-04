@@ -232,7 +232,11 @@ Features of the model: Movie ratings
   <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/decision_tree_model.PNG" alt="tree_model">
 </div>
 
-**Predicted Output:** The bootstrapping Random Forest calculation consolidates gathering learning techniques with the choice tree system to make various arbitrarily drawn choice trees from the information, averaging the outcomes to yield another outcome that regularly prompts solid predictions/classification.
+**Features of the model:** Movie ratings
+
+**Predicted Output:** The bootstrapping Random Forest calculation consolidates gathering learning techniques with the choice tree system to make various arbitrarily drawn choice trees from the information, averaging the outcomes to yield another outcome that regularly prompts solid predictions/classification and decide the recommend movies from the dataset.
+
+**Splitting and Training the data set** :Use a surprise function to split the train data and test data. The likely split for the training and testing set would be a 80% and 20% split. The dataset is large and the number of users in train set is 4177 and the number of item in train data is 8011.  
 
 ### **3 - Memory-Based Item-item Collaborative Filtering**
 
