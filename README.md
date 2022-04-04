@@ -220,6 +220,20 @@ Features of the model: Movie ratings
 
 **The Model:** Random forest classifiers are a kind of gathering learning model that joins various more modest models into a more vigorous and precise model. Random forest models utilize weak learner algorithms (choice trees) and join their result to make a last order (or regression) choice.
 
+**Preliminary data preprocessing**
+ - Combed and merged the csv files "movies" and "ratings" into a new csv file "clean_data".
+ - Extract 20 movie genres and calculate the movie frequency of each genre and set them as a dataframe "genres".
+ - Split the dataset into train set(20%) and test set(80%).   
+ 
+**Preliminary feature engineering and preliminary feature selection, including the decision-making process**
+ - Ratings is a intuitive parameter of movie quality thus I choose ratings as a feature of the model.
+ - Genres is a intuitive parameter of movie style thus I choose genres as a feature of the model.  
+ 
+**How data was split into training and testing sets.**
+ - I use "surprise" function to split the data (see the codes).  
+ 
+**model choice, including limitations and benefits**  
+
 **Why we are using it:** Both result and component determination of irregular woodland models are not difficult to decipher, and they can undoubtedly deal with exceptions and nonlinear information. The random forest model can accomplish equivalent prescient exactness on large tabular data with less code and faster performance. Moreover, the Random Forest has a great interpretability and high accuracy
 
 <div align="center">
@@ -232,7 +246,7 @@ Features of the model: Movie ratings
   <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/decision_tree_model.PNG" alt="tree_model">
 </div>
 
-**Predicted Output:** The bootstrapping Random Forest calculation consolidates gathering learning techniques with the choice tree system to make various arbitrarily drawn choice trees from the information, averaging the outcomes to yield another outcome that regularly prompts solid predictions/classification.
+**Predicted Output:** The bootstrapping Random Forest calculation consolidates gathering learning techniques with the choice tree system to make various arbitrarily drawn choice trees from the information, averaging the outcomes to yield another outcome that regularly prompts solid predictions/classification and make decisions of a recommend movie list for the users.
 
 ### **3 - Memory-Based Item-item Collaborative Filtering**
 
