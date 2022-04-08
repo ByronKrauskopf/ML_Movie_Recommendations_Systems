@@ -9,6 +9,7 @@ clean_movies.csv
 clean_ratings.csv
 clean_tags.csv
 clean_data_README.txt
+cleanratings.csv
 
 #ignore raw_data files
 raw_genome_scores.csv
