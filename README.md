@@ -248,46 +248,6 @@ Features of the model: Movie ratings
 
 **Predicted Output:** The bootstrapping Random Forest calculation consolidates gathering learning techniques with the choice tree system to make various arbitrarily drawn choice trees from the information, averaging the outcomes to yield another outcome that regularly prompts solid predictions/classification and make decisions of a recommend movie list for the users.
 
-### **3 - Memory-Based Item-item Collaborative Filtering**
-
-**The Model:** This model is based on the similarity in preferences between two users and uses this to generate recommendations. The algorithm will generate an item similarity matrix of look-alikes for each movie that will be used to recommend look-alike movies to the user. For this similarity matrix we can use either a Jaccard Similarity, a Cosine Similarity or a Pearson Similarity.
-
-**Why we are using it:** We are using Memory-Based Collaborative Filtering because of its ease of implementation and its quality of predictions. We are specifically using an Item-Item Collaborative Filtering instead of a User-User Collaborative Filtering model because it is much less resource intensive for when new users are added since the similarity matrix is built from the static movie list instead of the users. 
-
-**Predicted Output:** The output is expected to be recommendations for a user based on the models predictions of what that user would rate the recommended movies by identifying what similar users have rated those movies.
-
-**Evaluation:** We will use the Root Mean Squared Error (RMSE) metric to evaluate the accuracy of our predictions as this is a popular and standard metric.
-
-**The Math:** There are three distance metrics used in the collaborative filtering in the comparison matrix:
-
-**1. Jaccard Similarity:** Similitude depends on the quantity of clients that have evaluated things A and B divided by the quantity of clients who have appraised either A or B. Jaccard similarity is commonly used when Boolean values are used instead of numeric ratings. 
-
-**2. Cosine Similarity:** Similarity is the cosine related to the angle between two vectors A and B. The closer the vectors are (the more they are related) the smaller the angle and larger the cosine coefficient is. The similarity coefficient falls between a value of [-1,1], where 1 shows a perfect relationship between sets A and B. The equation below is the dot product of the vectors A and B divided by their magnitude:
-
-<div align="center">
-  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/cosine_coeff.PNG" alt="cosine_coeff">
-</div>
-
-**3. Pearson Similarity (ρ):** Similarity is the Pearson coefficient between two vectors. The coefficient is the **product-moment** correlation coefficient and measures the linear correlation between two sets of data. Shown in the equation below, the coefficient is the ratio of the covariance of the two factors and the result of their standard deviations; the results are normalize  and will be a value between -1 and 1, with 1 being a perfect correlation.
-
-<div align="center">
-  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/pearson-similarity.png" alt="pearson_coeff">
-</div>
-  
-The diagram below shows examples of scatter diagrams with different values of correlation coefficients (ρ):
-
-<div align="center">
-  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/scatter.PNG" alt="scatterplot">
-</div>
-
-The image below shows several sets of (x,y) points with their correlation coefficient between x and y. You can see below that the correlation reflects the strength and direction of linear relationship (top column), however not the incline of that relationship (center), or many aspects of nonlinear relationships (bottom). 
-
-<div align="center">
-  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/plot_1.PNG" alt="plot1">
-</div>
-  
-More data can be found just clicking on this  [wiki](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) article here. 
-
 <!--################ Dashboard #################-->
 
 # Dashboard
