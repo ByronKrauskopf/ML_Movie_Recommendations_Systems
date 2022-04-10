@@ -300,6 +300,10 @@ Follow below the image of our dashboard:
 
 ![](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/Douglas/Dashboard/Capture_%20Dashboard_description%20of%20interactive%20elements.PNG)
 
+Follow below the image of our Heatmpa and movies released racing bar chart:
+
+![](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/Douglas/Dashboard/Capture_%20Dashboard_Heatmap%20and%20movies%20released%20racing%20bar%20chart%20with%20interactive%20elements.PNG)
+
 ### Storyboard on Google Slide(s):
 
 To end, we develop an Storyboard on Google Slide(s) available on following link: https://docs.google.com/presentation/d/1VwYMOzThBx8R92Co6KbsnSdxZkLTR5lw/edit?usp=sharing&ouid=110832098454737220689&rtpof=true&sd=true.
