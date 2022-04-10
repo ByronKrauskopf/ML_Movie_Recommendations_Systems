@@ -288,14 +288,13 @@ The dashboard blueprint consists of eight graphs, and all elements are connected
 
 ### Description of interactive element(s):
 
-Graph 1:  Numerical overview related to data analysis. The objective is to show an overview with general project numbers.
-Graph 2: Number of movies by genre. The objective is to evaluate the data relationship between movies vs genre
-Graph 3:  Top rated movies. The objective is to verify which would be the movie (title) with the highest rating among users Top-rated
-Graph 4:  The number of films released per year. The objective is to evaluate the relationship between films released per year data. Check if there is any concentration of launches in a given year, any other relationship number
-Graph 5: Total users (Id's) per year. The objective is to evaluate the number of users who evaluated the films per year.
-Graph 6: Heatmap with the highest rated movies. The objective is to verify which are the movies with the highest rating by users
-Graph 7: Number of movies by genre. The objective is to evaluate the relationship of films by genre. Which genre has the most movies?
-Graph 8: The number of ratings. The objective is to verify the distribution of all movie ratings.
+* Graph 1:  Numerical overview related to the exploratory data analysis. The objective is to show an overview related to the database analyzed.
+* Graph 2:  Top rated movies. The objective is to verify what is the movie (title) with the highest rating among users Top-rated.
+* Graph 3: Number of movies by genre. The objective is to show the distribuition of movies by genre in quantity.
+* Graph 4: Total users (Id's) per year. The objective is to show the distribution of users who evaluated the films by year.
+* Graph 5:  The number of films released per year. The objective is to show the distribution of movies released by year.
+* Graph 6: Number of movies rating by genre. The objective is to show the distribution of movies rating by genre.
+* Graph 7: The number of ratings. Distribution of all movie ratings in quantity.
 
 Follow below the image of our dashboard:
 
