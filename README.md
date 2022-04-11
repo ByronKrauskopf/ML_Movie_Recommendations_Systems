@@ -43,9 +43,16 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#relational-database-setup">Relational Database Setup</a></li>
         <li><a href="#erd-database-diagram">ERD Database Diagram</a></li>
+        <li><a href="#etl-process">ETL Process</a></li>
       </ul>
     </li>
-    <li><a href="#machine-learning-models">Machine Learning Models</a></li>
+     <li>
+      <a href="#machine-learning-models">Machine Learning Models</a></li>
+      <ul>
+        <li><a href="#data-preprocessing">Data Preprocessing</a></li>
+        <li><a href="#1-model-based-collaborative-filtering-using-matrix-factorization">Model Based Collaborative Filtering Using Matrix Factorization</a></li>
+        <li><a href="#K-Means Model">K-Means Model</a></li>
+      </ul>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#communications-protocol">Communications Protocol</a></li>
     <li><a href="#Acknowledgements">Acknowledgements</a></li>
@@ -201,6 +208,25 @@ The ETL process consisted of the following steps:
 
 # Machine Learning Models
 
+### **Data Preprocessing**
+
+In the data preprocessing phase the following steps were taken:
+
+1) The movies and ratings tables form the database were called from the database using SQLAlchemy.
+2) A left join on "movieId" was perfromed on the two tables.
+3) Using groupby and count functions the number of ratings by userId was calculated.
+4) Using groupby and count functions the number of ratings by movieId was calculated.
+5) Any userIds that have reviewed less than 100 movies was dropped using filter.
+6) Any movieIds that have less then 100 reviews was dropped using filter.
+7) Resulting DataFrame contained 7 columns and 19,761,870 rows.
+8) The sparcity of the DataFrame was checked and result was 0.9689 indicating that 96.89% of cells have values
+9) Unneccessary columns were dropped 
+10) Processed DataFrame was uploaded to PostgresSQL under table name Model_Refined_Data
+
+The Model_Refined_Data table created by this process will be the common source loaded into both of the Machine Learning models outlined below. During the preprocessing the decision was made to exclude any userIds and movieIds that had less than 100 reviews. This was done to reduce the overall size of the dataset being used to improve its efficency. The assumption is that excluding these small values will have little to no impact on the overall accuracy of the models. 
+
+**Code:** The code for the data preprocessing can be found [here](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/main/ETL_and_Preprocessing_code/Model_Data_Preprocessing.ipynb)  
+
 ### **1 - Model Based Collaborative Filtering Using Matrix Factorization (MF)**
 
 **The Model:** The model is a collaborative filtering method that finds the relationship between items and users’ entities. The model learns the latent preferences of users and the latent attributes of items from known ratings to find similarity and make a recommendation. The model uses low-rank matrix factorization to derive the preferences from the dataset. Matrix factorization is the preferred model for recommender systems since it can deal with scalability and sparsity better than Memory-based collaborative filtering.  
@@ -215,6 +241,8 @@ Features of the model: Movie ratings
 **Predicted Output:** List of recommended movies
 
 **Splitting and Training the data set** : The dataset was split into a much smaller set due to the size of the original dataset. From there 5 splits were made to determine the accuracy of the dataset using the cross-validate function in sci-kit surprise. This gave us the results for RMSE. 
+
+**Code:** The code for this model can be found [here](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/main/ML_code/CollabFilteringWithMatrixRefactorization.ipynb) 
 
 ### **2 - Random Forest Classifiers**
 
@@ -247,6 +275,8 @@ Features of the model: Movie ratings
 </div>
 
 **Predicted Output:** The bootstrapping Random Forest calculation consolidates gathering learning techniques with the choice tree system to make various arbitrarily drawn choice trees from the information, averaging the outcomes to yield another outcome that regularly prompts solid predictions/classification and make decisions of a recommend movie list for the users.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!--################ Dashboard #################-->
 
@@ -293,6 +323,8 @@ Our tableau file is available on the following links below:
 Tableau Dashboard: https://public.tableau.com/app/profile/douguot/viz/MoviesRecommendations/Story1
 Tableau Heatmap: https://public.tableau.com/app/profile/douguot/viz/MoviesRecommendationsHeatmapandracingbarchart/Dashboard2?publish=yes
 Tableau Story: https://public.tableau.com/app/profile/douguot/viz/MoviesRecommendationsStory/Story1?publish=yes
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!--################Roadmap################-->
 # Roadmap
