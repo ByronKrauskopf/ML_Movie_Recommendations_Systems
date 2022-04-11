@@ -316,9 +316,9 @@ We enhance our visualization by adding some features on the Tableau, such as bar
 
 Our tableau file is available on the following links below:
 
-Tableau Dashboard: https://public.tableau.com/app/profile/douguot/viz/MoviesRecommendations/Story1
-Tableau Heatmap: https://public.tableau.com/app/profile/douguot/viz/MoviesRecommendationsHeatmapandracingbarchart/Dashboard2?publish=yes
-Tableau Story: https://public.tableau.com/app/profile/douguot/viz/MoviesRecommendationsStory/Story1?publish=yes
+* Tableau Dashboard: https://public.tableau.com/app/profile/douguot/viz/MoviesRecommendations/Story1
+* Tableau Heatmap: https://public.tableau.com/app/profile/douguot/viz/MoviesRecommendationsHeatmapandracingbarchart/Dashboard2?publish=yes
+* Tableau Story: https://public.tableau.com/app/profile/douguot/viz/MoviesRecommendationsStory/Story1?publish=yes
 
 <!--################Roadmap################-->
 # Roadmap
