@@ -244,25 +244,21 @@ Features of the model: Movie ratings
 
 **Code:** The code for this model can be found [here](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/main/ML_code/CollabFilteringWithMatrixRefactorization.ipynb) 
 
-### **2 - Random Forest Classifiers**
+### **2 - K-Means Clustering**
 
-**The Model:** Random forest classifiers are a kind of gathering learning model that joins various more modest models into a more vigorous and precise model. Random forest models utilize weak learner algorithms (choice trees) and join their result to make a last order (or regression) choice.
+**The Model:**  K-means is an unsupervised learning algorithm used to identify and solve clustering issues. K represents how many clusters there will be. These clusters are then determined by the means of all the points that will belong to the cluster. The K-means algorithm groups the data into K clusters, where belonging to a cluster is based on some similarity or distance measure to a centroid.  
 
-**Preliminary data preprocessing**
- - Combed and merged the csv files "movies" and "ratings" into a new csv file "clean_data".
- - Extract 20 movie genres and calculate the movie frequency of each genre and set them as a dataframe "genres".
- - Split the dataset into train set(20%) and test set(80%).   
- 
-**Preliminary feature engineering and preliminary feature selection, including the decision-making process**
- - Ratings is a intuitive parameter of movie quality thus I choose ratings as a feature of the model.
- - Genres is a intuitive parameter of movie style thus I choose genres as a feature of the model.  
- 
-**How data was split into training and testing sets.**
- - I use "surprise" function to split the data (see the codes).  
- 
-**model choice, including limitations and benefits**  
+**Why we are using it:** There are two key differences in unsupervised learning: no paired inputs and outcomes, and the model uses a whole dataset as input. Since we are lacking of user info in our datasets, there are not enough features to set as training input using a supervised machine learning model. Besides, clustering is a good way for us to group our users and come up with a movie recommending predicition as per group movie perference. Thus we choose K-Means Clustering model to use in our project.  
 
-**Why we are using it:** Both result and component determination of irregular woodland models are not difficult to decipher, and they can undoubtedly deal with exceptions and nonlinear information. The random forest model can accomplish equivalent prescient exactness on large tabular data with less code and faster performance. Moreover, the Random Forest has a great interpretability and high accuracy
+**The Math & Decision-making:** K-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster. In this case, we cluster our users as per their average ratings for each movie genre. We believe the users who rated a movie a similar score, they may share a similar movie taste. Thus we group them altogether and if a user in the group has not watched a specific movie, we may use the average ratings from other users in the group to predict whether he/she would like such movie.  
+
+**Features of the model:** Userid, movie ratings, genres.  
+
+**Splitting and Training the data set:** Since we have more than 25 million rows in the original csv file, we combed and filtered the ratings.csv file and saved as the Model_Refined_Data.csv. We removed users who have rated less than 100 movies and also removed movies which have less than 100 ratings. The code for data cleaning is [here]
+(https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/6cb47062feca617bb6479adbb3c4ab5c1f1e36ff/ETL_and_Preprocessing_code/Model_Data_Preprocessing.ipynb)  
+
+**Code:** The code for this model can be found [here]
+(https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/6cb47062feca617bb6479adbb3c4ab5c1f1e36ff/ML_code/notebooks/ML_K-means_Cluster.ipynb)
 
 <div align="center">
   <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/matrix.PNG" alt="rfc">
