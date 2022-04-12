@@ -264,7 +264,7 @@ Features of the model: Movie ratings
  - It's easy to spot horizontal lines with similar colors, these are users without a lot of variety in their ratings. A rating of four stars means different things to different people but shows the same.  
 As per this logic, if we calculate the average score in this cluster for every movie, we would have an understanding for how this 'taste cluster' feels about each movie in the dataset. We could input a userid and get his/her cluster and then find out which of the movies the user hasn't watched, and provide he/she a movie recommending list as per the average ratings of other users in the cluster about such movies.  
 Here is a sample result:  
-![ML_KMEANS_SAMPLE_RESULT](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/main/Resources/ML_KMEANS_SAMPLE_RESULT.PNG)
+![ML_KMEANS_SAMPLE_RESULT](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/a22bba16db1c0e2b23ebd60db6b68b3cecd7cb83/Resources/ML_KMEANS_SAMPLE_RESULT.png)
 
 **Code:** The code for this model can be found [here](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/main/ML_code/notebooks/ML_K-means_Cluster.ipynb)
 
