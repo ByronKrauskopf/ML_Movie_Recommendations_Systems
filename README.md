@@ -244,37 +244,29 @@ Features of the model: Movie ratings
 
 **Code:** The code for this model can be found [here](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/main/ML_code/CollabFilteringWithMatrixRefactorization.ipynb) 
 
-### **2 - Random Forest Classifiers**
+### **2 - K-Means Clustering**
 
-**The Model:** Random forest classifiers are a kind of gathering learning model that joins various more modest models into a more vigorous and precise model. Random forest models utilize weak learner algorithms (choice trees) and join their result to make a last order (or regression) choice.
+**The Model:**  K-means is an unsupervised learning algorithm used to identify and solve clustering issues. K represents how many clusters there will be. These clusters are then determined by the means of all the points that will belong to the cluster. The K-means algorithm groups the data into K clusters, where belonging to a cluster is based on some similarity or distance measure to a centroid.  
 
-**Preliminary data preprocessing**
- - Combed and merged the csv files "movies" and "ratings" into a new csv file "clean_data".
- - Extract 20 movie genres and calculate the movie frequency of each genre and set them as a dataframe "genres".
- - Split the dataset into train set(20%) and test set(80%).   
- 
-**Preliminary feature engineering and preliminary feature selection, including the decision-making process**
- - Ratings is a intuitive parameter of movie quality thus I choose ratings as a feature of the model.
- - Genres is a intuitive parameter of movie style thus I choose genres as a feature of the model.  
- 
-**How data was split into training and testing sets.**
- - I use "surprise" function to split the data (see the codes).  
- 
-**model choice, including limitations and benefits**  
+**Why we are using it:** There are two key differences in unsupervised learning: no paired inputs and outcomes, and the model uses a whole dataset as input. Since we are lacking of user info in our datasets, there are not enough features to set as training input using a supervised machine learning model. Besides, clustering is a good way for us to group our users and come up with a movie recommending predicition as per group movie perference. Thus we choose K-Means Clustering model to use in our project.  
 
-**Why we are using it:** Both result and component determination of irregular woodland models are not difficult to decipher, and they can undoubtedly deal with exceptions and nonlinear information. The random forest model can accomplish equivalent prescient exactness on large tabular data with less code and faster performance. Moreover, the Random Forest has a great interpretability and high accuracy
+**The Math & Decision-making:** K-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster. In this case, we cluster our users as per their average ratings for each movie genre. We believe the users who rated a movie a similar score, they may share a similar movie taste. Thus we group them altogether and if a user in the group has not watched a specific movie, we may use the average ratings from other users in the group to predict whether he/she would like such movie.  
 
-<div align="center">
-  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/matrix.PNG" alt="rfc">
-</div>
-  
-**The Math:** The model does a row and column sample with a decision tree as its base. By increasing the number of base learners (k), the variance of the model will decrease and the opposite happens if the number of base learners (k) increases. A *Gini* index is calculated to determine the impurity of nodes in the decision tree; typically a decision tree classifier will choose the node with the largest Gini index as the root node. 
+**Features of the model:** Userid, movie ratings, genres.  
 
-<div align="center">
-  <img src="https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/decision_tree_model.PNG" alt="tree_model">
-</div>
+**Splitting and Training the data set:** Since we have more than 25 million rows in the original csv file, we combed and filtered the ratings.csv file and saved as the Model_Refined_Data.csv. We removed users who have rated less than 100 movies and also removed movies which have less than 100 ratings. We firstly use genre " Romance", "Scifi" and "ACTION" as a test to see how our K-means clustering model works. However, since we have 20 genres, scartter plot would not suitable for us to virtural the results, thus we use heatmap to show the final results. Besides, Since most users have not rated and watched most movies, we could only get a small number of cells have values. Thus, in order to present a more 'dense' region of this sparse dataset, I chose to sort the most rated movies. We peak at the top of the dataset and see what happens.  
 
-**Predicted Output:** The bootstrapping Random Forest calculation consolidates gathering learning techniques with the choice tree system to make various arbitrarily drawn choice trees from the information, averaging the outcomes to yield another outcome that regularly prompts solid predictions/classification and make decisions of a recommend movie list for the users.
+**Predict Outcomes:** The graph filters the data to only show the most rated movies, and then sorts them by average rating. The more similar the ratings in a cluster are, the more vertical lines in similar colors you'll be able to trace in that cluster.  
+
+ - Some clusters are more sparse than others, containing people who probably watch and rate less movies than in other clusters.
+ - Some clusters are mostly yellow and bring together people who really love a certain group of movies. Other clusters are mostly green or blue meaning they contain people who agree that a certain set of movies deserves 2-3 stars.
+ - The purple cells mean that the user has not watched the movie thus the rating is 0.
+ - It's easy to spot horizontal lines with similar colors, these are users without a lot of variety in their ratings. A rating of four stars means different things to different people but shows the same.  
+As per this logic, if we calculate the average score in this cluster for every movie, we would have an understanding for how this 'taste cluster' feels about each movie in the dataset. We could input a userid and get his/her cluster and then find out which of the movies the user hasn't watched, and provide he/she a movie recommending list as per the average ratings of other users in the cluster about such movies.  
+Here is a sample result:  
+![ML_KMEANS_SAMPLE_RESULT](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/main/Resources/ML_KMEANS_SAMPLE_RESULT.PNG)
+
+**Code:** The code for this model can be found [here](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/main/ML_code/notebooks/ML_K-means_Cluster.ipynb)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
