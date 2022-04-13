@@ -242,7 +242,7 @@ Features of the model: Movie ratings
 
 **Splitting and Training the data set** : The dataset was split into a much smaller set due to the size of the original dataset. From there 5 splits were made to determine the accuracy of the dataset using the cross-validate function in sci-kit surprise. This gave us the results for RMSE. 
 
-**Code:** The code for this model can be found [here](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/main/ML_code/CollabFilteringWithMatrixRefactorization.ipynb) 
+**Code:** The code for this model can be found [here](https://github.com/ByronKrauskopf/ML_Movie_Recommendations_Systems/blob/main/ML_code/movierecommendermatrixfactorization.py) 
 
 ### **2 - K-Means Clustering**
 
