@@ -319,7 +319,7 @@ Our tableau file is available on the following links below:
 
 <!--################Results################-->
 # Results
-
+For this project, we had used two machine learning models. They were K-Means and Collaborative Filtering Using Matrix Factorization. The K-Means model acheieved........ From using these two models, we learned that the K-Means model produced inconsistent results due to the replacing of the NaN values with 0's that affect the calculations. With the MF model, it is able to fill in the user-movie matrix with predicted ratings by first decomposing the matrix into a lower rank via single-value decomposition and then prediciting the ratings. This made it easier to build a function that would output a list of recommendations for users. The RMSE for the MF model was 0.8057. This is an acceptable value, but ideally the RMSE should be over 0.9. This shows there is room for improvement in the model. 
 
 
 <!--################Acknowledgements################-->
