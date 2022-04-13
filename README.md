@@ -53,9 +53,8 @@
         <li><a href="#1-model-based-collaborative-filtering-using-matrix-factorization">Model Based Collaborative Filtering Using Matrix Factorization</a></li>
         <li><a href="#K-Means Model">K-Means Model</a></li>
       </ul>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#communications-protocol">Communications Protocol</a></li>
-    <li><a href="#Acknowledgements">Acknowledgements</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
     <li><a href="#contributing">Contributing</a></li>
   </ol>
 </details>
@@ -318,31 +317,10 @@ Our tableau file is available on the following links below:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!--################Roadmap################-->
-# Roadmap
+<!--################Results################-->
+# Results
 
-The roadmap outlines the task's objectives, and expectations are introduced in a timetable structure utilizing an undertaking guide. Thus, the venture guide can be utilized to oversee partner assumptions and convey plans and direction assets.
 
-Follow our roadmap below to implement our project according to the deliverables, named as segments from 1 to 4.
-
-![](https://github.com/ByronKrauskopf/Group_3_Final_Project/blob/main/Resources/Capture2_%20Project%20Roadmap_Group3.PNG)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!--################Communication Protocol################-->
-
-# Communications Protocol
-
-**1) General communication:**
-For this project all communications will be done via Slack for messaging and Zoom for meetings. Team members should check Slack at least once per day for any critical messages. 
-
-**2) Meetings:**
-Team meetings will occur 3 times a week on Tuesdays and Thursdays during class hours, and Saturday afternoons. Additional meetings can be scheduled through Slack as needed. 
-
-**3) Pull Requests:**
-When submitting a pull request in GitHub, the user should also post a notice in Slack so that all other team members are aware of the outstanding request in GitHub and can review and approve. All pull requests will require a minimum of 3 reviews and approvals from team members before merging.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!--################Acknowledgements################-->
 
