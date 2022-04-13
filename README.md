@@ -15,7 +15,7 @@
     <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://byronkrauskopf.github.io/ML_Movie_Recommendations_Systems/">View Tableau</a>
+    <a href="https://public.tableau.com/app/profile/douguot/viz/MoviesRecommendations/DashboardOverview">View Tableau</a>
     ·
     <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/issues">Report Bug</a>
     ·
