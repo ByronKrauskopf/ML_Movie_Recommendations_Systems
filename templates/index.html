@@ -45,15 +45,22 @@
     <!--Form-->
     </br></br>
     <form action="/data" method = "POST">
-        <p>Movie Name <input type = "text" name = "movie_title" /></p>
+        <p>Enter the User Id:<input type = "text" name = "user_ids" /></p>
         <p><input type = "submit" value = "Submit" /></p>
     </form>
     </br></br>
     
+    <!--Print Movie Names-->
+    {% for movieName in movie_name %}
+        <p>{{movieName}} </p>
+    {% endfor %}
+
+
     <!--Print 10 images from ML Method-->
-    <div id = "ml_dash">
-        {%for _ in image_url %}
-            <img src={{image_url}} alt="Title Poster">
+    <div class="row"> 
+        <div class="column">
+        {%for imageURL in movie_images %}
+            <img src={{imageURL}} alt="Title Poster" style="width:100%">
         {% endfor %}
     </div>
 
