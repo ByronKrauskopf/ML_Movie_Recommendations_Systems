@@ -208,7 +208,7 @@ def data():
 
         #Generate predictions
         preds, movies, df_ratings = MovieRec()
-        predictions = recommend_movies(preds, int(user_id), movies, df_ratings, 20)
+        predictions = recommend_movies(preds, int(user_id), movies, df_ratings, 5)
         
         print('--------------')
         print(predictions)
@@ -236,10 +236,10 @@ def data():
         print(link_list)
 
         #Return template with the values
-        return render_template("index.html", movie_names = predictions['title'], movie_images = link_list)
+        return render_template("result.html", movie_names = predictions['title'], movie_images = link_list)
 
     if request.method == 'GET':
-        return render_template("index.html")
+        return render_template("result.html")
 
 #Run app
 if __name__ == "__main__":
