@@ -358,6 +358,19 @@ Code Example - https://github.com/khanhnamle1994/movielens/blob/master/SVD_Model
 
 <!--################Contributors################-->
 
+# Limitations related to the project
+
+Some limitations were found in the development of the project.
+
+* Database: MovieLens Dataset does not contain additional information related to users, limiting the variables for recommending movies.
+* Big Data: The database used contains more than 25MM lines. The tableau for example can only load up to 15MM. Jupyter Notebook also has limitations for Big Data, using Python and Pandas.
+* Machine Learning: Some Machine Learning models may not be effective for use in recommending movies, making it necessary to research other more efficient models.
+
+# Recommendation for future analysis
+
+For future analysis, we recommend the use of a dataset containing more information related to users, such as gender, age, nationality, among others. This will allow an analysis based on the user's profile, increasing variables to be used in Machine Learning Models.
+
+
 # Contributing
 <div align="center">
   <a href="https://github.com/ByronKrauskopf/Group_3_Final_Project/graphs/contributors">
