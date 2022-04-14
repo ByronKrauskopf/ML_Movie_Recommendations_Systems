@@ -64,22 +64,20 @@
 __Movie Recommendation system from MovieLens dataset__
 
 Welcome to our final data analytics project. This project aims to tell a cohesive story using a dataset. As a small team, we will create an impressive data visualization app, that will be a cumulative display of the skills we acquired throughout the bootcamp. 
-Our chosen project will be to build a movie recommendation system. With many streaming services available nowadays, building an efficient movie recommendation system has become more important due to the increase in demand to create customized content for consumers. We will be using the MovieLens dataset to build a movie recommender system. It contains approximately 1,000,209 movie ratings of 3,900 movies made by 6,040 MovieLens users.  The reason we chose this topic is because we have a large dataset to work with and we all enjoy watching movies and are looking for a recommendation on what to watch next. The main questions we want to answer with the dataset is: 
+Our chosen project will be to build a movie recommendation system. With many streaming services available nowadays, building an efficient movie recommendation system has become more important due to the increase in demand to create customized content for consumers. We will be using the MovieLens dataset to build a movie recommender system. It contains approximately 25,000,000 movie ratings of 209,171 movies made by 162,541 MovieLens users.  The reason we chose this topic is because we have a large dataset to work with and we all enjoy watching movies and are looking for a recommendation on what to watch next. The main questions we want to answer with the dataset is: 
 
 ## Project Inspirations
-With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the MovieLens dataset to build a movie recommender system. It contains approximately __movie ratings__ of movies made by __MovieLens users__. 
+With many streaming services available nowadays, building an efficient movie recommender system has become more important due to the increase in demand to create customized content for consumers. We will be using the MovieLens dataset to build a movie recommender system. 
 
 ## Data Source
 MovieLens 25M Dataset: https://grouplens.org/datasets/movielens/25m/
 
 ## Targeted Shareholders
-The potential customers of our project are mainly movie corporations, directors, and producers. We hope our target customers could use our analysis to refer to the genres that are easiest to score in marketing and take it as a reference to their future filmmaking accordingly.
+The potential customers are movie streaming companies looking to improve their recommendation algorithms, and everyday movie watchers looking for better more accurate recommendations.
 
 ## Questions to be answered
-The principle question we need to address with the dataset is: __Can we accurately predict movie suggestions for users based off their previous ratings?__
- - What genres of movies score high ratings in current market?
- - What genres of movies are likely to win awards?
- - What genres of movies are likely to have a high box office?
+The principle question we need to address with the dataset is: __Can we accurately predict movie reccomendations for users based off their previous ratings?__
+A follow up question to this is __What is the best Machine Learning model for this purpose?__
 
 ### Built With:
 - AWS
@@ -89,6 +87,8 @@ The principle question we need to address with the dataset is: __Can we accurate
 - HTML
 - JS
 - Flask
+- Jupyter Notebook
+- Google Colab
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!--#############Getting Started################-->
